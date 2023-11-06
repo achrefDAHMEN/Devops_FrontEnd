@@ -11,6 +11,7 @@ COPY package*.json ./
 COPY . .
 
 # Construire l'application Angular
+RUN npm install
 RUN npm run build
 
 # Utilisation d'une image nginx pour servir l'application Angular
